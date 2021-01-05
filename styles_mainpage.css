@@ -13,15 +13,15 @@ html {
     }
 
  /* Start media queries */
-        /* A Media Query max-width: 700px */
-        @media screen and (max-width: 700px) {
-            /* Resized content to fit 700px  */
+        /* A Media Query max-width: 400px */
+        @media screen and (max-width: 400px) {
+            /* Resized content to fit 400px  */
                 body {
-                    max-width: 700px;
+                    max-width: 400px;
                 }
-            /* Resized main-content to fit 700px  */
+            /* Resized main-content to fit 400px  */
             #gutter {
                 position: absolute;
                 left: 5%;
-                right: 5%;
             }
+        }

@@ -26,6 +26,7 @@ html {
             /* Resized main-content to fit 700px  */
             #gutter {
                 position: absolute;
-                left: 5%;
-                right: 5%;
+                left: 3%;
             }
+        }
+        
