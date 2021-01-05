@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+#header {
+    text-align: center;
+    }
+
+ /* Start media queries */
+        /* A Media Query max-width: 700px */
+        @media screen and (max-width: 700px) {
+            /* Resized content to fit 700px  */
+                body {
+                    max-width: 700px;
+                }
+            /* Resized main-content to fit 700px  */
+            #gutter {
+                position: absolute;
+                left: 5%;
+                right: 5%;
+            }
