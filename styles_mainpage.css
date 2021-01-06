@@ -12,7 +12,17 @@ html {
     text-align: center;
     }
 
+p {
+    text-align: center;
+}
+
+#welcome {
+    font-size: 14pt;
+    font-weight: 600;
+}
+
 #start-button {
+    padding: 15px 25px;
     background-color: #6610f2;
 }
 
