@@ -53,9 +53,12 @@ var quizQuestions = [
 ]
 
 
-
-
+var mainHeader = document.getElementById("main-header");
+var pageMessage = document.getElementById("page-message");
 var startButton = document.getElementById("start-button");
+
+startQuiz();
+showResults();
 
 startButton.addEventListener("click", function() {
     var 
