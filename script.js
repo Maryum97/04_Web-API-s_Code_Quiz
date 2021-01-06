@@ -1,5 +1,5 @@
-// Define the questions
-var quizQuestions = [
+// Defining the questions
+var questions = [
     {
         question: "Commonly used data types DO NOT include:",
         answers: {
@@ -52,14 +52,58 @@ var quizQuestions = [
     }
 ]
 
-
+// Calling the elements from the html
 var mainHeader = document.getElementById("main-header");
 var pageMessage = document.getElementById("page-message");
 var startButton = document.getElementById("start-button");
+var timer = document.getElementById("seconds-remaining");
 
-startQuiz();
-showResults();
+// Defining other elememts
+var timeInterval;
+var secondsLeft = 90;
+var message;
 
+
+
+//Defining the functions and then calling them below:
+
+// Function to start the quiz
+function startQuiz() {
+
+    var i = 0;
+
+    var quizQuestion = document.createElement("div");
+    quizQuestion.setAttribute("id", "quiz-questions");
+
+    var quizAnswers = document.createElement("ul");
+    quizAnswers.setAttribute("id", "quiz-answers");
+
+    for (var i = 0; i < 4; i++) {
+
+    }
+
+    mainHeader.replaceChild(quizQuestion);
+    pageMessage.replaceChild(quizAnswers);
+
+}
+
+// Function to end the quiz and show the results 
+function showResults() {
+
+}
+
+// Function to start the timer
+function startTimer() {
+
+}
+
+// Function to stop the timer
+function stopTimer()  {
+
+}
+
+// Adding event (function defined earlier) to the button
 startButton.addEventListener("click", function() {
-    var 
-})
+    startQuiz();
+    startTimer();
+});
