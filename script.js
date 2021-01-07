@@ -54,36 +54,48 @@ var questions = [
 
 // Calling the elements from the html
 var mainHeader = document.getElementById("main-header");
-var pageMessage = document.getElementById("page-message");
+var pageContent = document.getElementById("page-content");
 var startButton = document.getElementById("start-button");
 var timer = document.getElementById("seconds-remaining");
 
 // Defining other elememts
 var timeInterval;
 var secondsLeft = 90;
+var quizContent;
 var message;
 
 
 
 //Defining the functions and then calling them below:
-
 // Function to start the quiz
 function startQuiz() {
 
-    var i = 0;
+    var index = 0;
 
-    var quizQuestion = document.createElement("div");
+    quizContent = document.createElement("div");
+    quizContent.setAttribute("id", "quiz-content");
+
+    var quizQuestion = document.createElement("h2");
     quizQuestion.setAttribute("id", "quiz-questions");
+    quizQuestion.textContent = questions[index].question;
 
     var quizAnswers = document.createElement("ul");
     quizAnswers.setAttribute("id", "quiz-answers");
 
     for (var i = 0; i < 4; i++) {
+        var listEl = document.createElement("li");
+        var buttonEl = document.createElement("button");
+        buttonEl.setAttribute("class", "quiz-answer");
+        buttonEl.setAttribute("data-id", i);
+        buttonEl.textContent = questions[index].answers[i];
 
+        listEl.appendChild(buttonEl);
+        quizAnswers.appendChild(listEl);
     }
 
-    mainHeader.replaceChild(quizQuestion);
-    pageMessage.replaceChild(quizAnswers);
+    quizContent.appendChild(quizQuestion);
+    quizContent.appendChild(quizAnswers);
+    mainHeader.replaceChild(quizContent, pageContent);
 
 }
 
