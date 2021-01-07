@@ -53,7 +53,7 @@ var questions = [
 ]
 
 // Calling the elements from the html
-var mainHeader = document.getElementById("main-header");
+var mainContent = document.getElementById("main-content");
 var pageContent = document.getElementById("page-content");
 var startButton = document.getElementById("start-button");
 var timer = document.getElementById("seconds-remaining");
@@ -70,17 +70,22 @@ var message;
 // Function to start the quiz
 function startQuiz() {
 
+    // Replace original page content with quiz questions and options
+
     var index = 0;
 
     quizContent = document.createElement("div");
     quizContent.setAttribute("id", "quiz-content");
 
-    var quizQuestion = document.createElement("h2");
+    var quizQuestion = document.createElement("h3");
     quizQuestion.setAttribute("id", "quiz-questions");
     quizQuestion.textContent = questions[index].question;
 
     var quizAnswers = document.createElement("ul");
     quizAnswers.setAttribute("id", "quiz-answers");
+
+
+    // Append options as buttons in "ul" element
 
     for (var i = 0; i < 4; i++) {
         var listEl = document.createElement("li");
@@ -95,7 +100,32 @@ function startQuiz() {
 
     quizContent.appendChild(quizQuestion);
     quizContent.appendChild(quizAnswers);
-    mainHeader.replaceChild(quizContent, pageContent);
+    mainContent.replaceChild(quizContent, pageContent);
+
+
+    // Add event to options (as buttons)
+
+    var optionBtn = quizAnswers.querySelectorAll("button");
+
+    quizAnswers.addEventListener("click", function(event) {
+        var element = event.target;
+        if (element.matches("button")) {
+            var buttonID = element.getAttribute("data-id");
+            checkAnswer(index, buttonID);
+            index++;
+        }
+        if (index === questions.length) {
+            stopTimer();
+            showResults();
+            return null;
+        }
+
+    quizQuestion.textContent = questions[index].question;
+    for (var j = 0; j < 4; j++) {
+        optionBtn[j].textContent = questions[index].answers[j];
+    }
+
+    })
 
 }
 
