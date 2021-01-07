@@ -38,6 +38,8 @@ var timeInterval;
 var secondsLeft = 90;
 var quizContent;
 var message;
+var removeMessage;
+var results;
 
 
 //Defining the functions and then calling them below:
@@ -95,6 +97,9 @@ function startQuiz() {
             return null;
         }
 
+
+    // Next question
+
     quizQuestion.textContent = questions[index].question;
     for (var j = 0; j < 4; j++) {
         optionBtn[j].textContent = questions[index].answers[j];
@@ -129,7 +134,7 @@ function checkAnswer(index, buttonID) {
         }
     }
 
-    var removeMessage = setTimeout(function() { // #####
+    removeMessage = setTimeout(function() {
         mainContent.removeChild(message);
     }, 1000)
 }
@@ -160,6 +165,40 @@ function stopTimer()  {
 
 // Function to end the quiz and show the results 
 function showResults() {
+
+    // Replace original page content with results in place of quiz questions
+
+    results = document.createElement("div");
+    results.setAttribute("class", "results");
+
+    var hEl = document.createElement("h1");
+    hEl.textContent = "Quiz Complete!";
+
+    var pEl = document.createElement("p");
+    pEl.textContent = "Your final score is " + secondsLeft + ".";
+
+    var form = document.createElement("form");
+    form.setAttribute("class", "form-quiz-answers");
+    var label = document.createElement("label");
+    label.textContent = "Enter initials: ";
+    var input = document.createElement("input");
+    input.setAttribute("type", "text-input");
+    var submit = document.createElement("input");
+    submit.setAttribute("type", "submit");
+    submit.setAttribute("id", "submit");
+
+    // Append elements into "form"
+
+    label.appendChild(input);
+    form.appendChild(label);
+    form.appendChild(submit);
+
+    // Appnend all new elements, including "form", into "results"
+
+    results.appendChild(hEl);
+    results.appendChild(pEl);
+    results.appendChild(form);
+    mainContent.replaceChild(results, pageContent);
 
 }
 
