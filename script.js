@@ -91,6 +91,7 @@ function startQuiz() {
         var listEl = document.createElement("li");
         var buttonEl = document.createElement("button");
         buttonEl.setAttribute("class", "quiz-answer");
+        buttonEl.setAttribute("background-color", "#6610f2"); // #####
         buttonEl.setAttribute("data-id", i);
         buttonEl.textContent = questions[index].answers[i];
 
@@ -127,6 +128,26 @@ function startQuiz() {
 
     })
 
+}
+
+// Function to alert message on page for correct/incorrect answer
+function checkAnswer() {
+    var correctOption = (questions[index].answers[buttonID] === questions[index].correctAnswer);
+
+    var message = document.createElement("div");
+    var pEl = document.createElement("p");
+    message.setAttribute("class", "message");
+
+    message.appendChild(pEl);
+    mainContent.appendChild(message);
+
+    if (correctOption) {
+        pEl.textContent = "Correct Answer!";
+    }
+
+    else {
+        pEl.textContent = "Incorrect Answer!";
+    }
 }
 
 // Function to end the quiz and show the results 
