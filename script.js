@@ -2,53 +2,28 @@
 var questions = [
     {
         question: "Commonly used data types DO NOT include:",
-        answers: {
-            1: "strings",
-            2: "booleans",
-            3: "alerts",
-            4: "numbers"
-        },
-        correctAnswer: "3"
+        answers: ["strings", "booleans", "alerts", "numbers"],
+        correctAnswer: "alerts"
     },
     {
         question: "The condition in an if/else statement is enclosed within __________.",
-        answers: {
-            1: "quotes",
-            2: "curly barckets",
-            3: "parenthesis",
-            4: "square brackets"
-        },
-        correctAnswer: "3"
+        answers: ["quotes", "curly barckets", "parenthesis", "square brackets"],
+        correctAnswer: "parenthesis"
     },
     {
         question: "Arrays in JavaScript can be used to store ___________.",
-        answers: {
-            1: "numbers and strings",
-            2: "other arrays",
-            3: "booleans",
-            4: "all of the above"
-        },
-        correctAnswer: "4"
+        answers: ["numbers and strings", "other arrays", "booleans", "all of the above"],
+        correctAnswer: "all of the above"
     },
     {
         question: "String values must be enclosed within ____________ when being assigned to variables.",
-        answers: {
-            1: "commas",
-            2: "curly brackets",
-            3: "quotes",
-            4: "parenthesis"
-        },
-        correctAnswer: "3"
+        answers: ["commas", "curly brackets", "quotes", "parenthesis"],
+        correctAnswer: "quotes"
     },
     {
         question: "A very useful tool used during development and debugging for printing content to the debugger is:",
-        answers: {
-            1: "JavaScript",
-            2: "terminal/bash",
-            3: "for loops",
-            4: "console.log"
-        },
-        correctAnswer: "4"
+        answers: ["JavaScript", "terminal/bash", "for loops", "console.log"],
+        correctAnswer: "console.log"
     }
 ]
 
@@ -63,7 +38,6 @@ var timeInterval;
 var secondsLeft = 90;
 var quizContent;
 var message;
-
 
 
 //Defining the functions and then calling them below:
@@ -131,7 +105,7 @@ function startQuiz() {
 }
 
 // Function to alert message on page for correct/incorrect answer
-function checkAnswer() {
+function checkAnswer(index, buttonID) {
     var correctOption = (questions[index].answers[buttonID] === questions[index].correctAnswer);
 
     var message = document.createElement("div");
@@ -147,21 +121,45 @@ function checkAnswer() {
 
     else {
         pEl.textContent = "Incorrect Answer!";
+        if (secondsLeft <= 10) {
+            secondsLeft = 0;
+        }
+        else {
+            secondsLeft -= 10;
+        }
     }
-}
 
-// Function to end the quiz and show the results 
-function showResults() {
-
+    var removeMessage = setTimeout(function() { // #####
+        mainContent.removeChild(message);
+    }, 1000)
 }
 
 // Function to start the timer
 function startTimer() {
+    timer.textContent = secondsLeft;
 
+    timeInterval = setInterval(function(){
+        if (secondsLeft <= 0) {
+            stopTimer();
+            showResults();
+            return null;
+        } 
+
+        secondsLeft--;
+        timer.textContent = secondsLeft;
+        
+    }, 1000)
 }
+
 
 // Function to stop the timer
 function stopTimer()  {
+    timer.textContent = secondsLeft;
+    clearInterval(timeInterval);
+}
+
+// Function to end the quiz and show the results 
+function showResults() {
 
 }
 
