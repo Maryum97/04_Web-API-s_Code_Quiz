@@ -200,10 +200,26 @@ function showResults() {
     results.appendChild(form);
     mainContent.replaceChild(results, pageContent);
 
+    // Enter input value & save score
+
+    if (input.value === "") {
+        alert("Please enter your initials.");
+        return null;
+    }
+
+    saveScore(input.value, secondsLeft);
+    window.location = "highscores.html";
+
 }
+
 
 // Adding event (function defined earlier) to the button
 startButton.addEventListener("click", function() {
     startQuiz();
     startTimer();
 });
+
+// Append last page ############
+if (stopTimer() === true) {
+    showResults();
+}
