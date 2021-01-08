@@ -51,7 +51,7 @@ function startQuiz() {
     var index = 0;
 
     quizContent = document.createElement("div");
-    quizContent.setAttribute("id", "quiz-content");
+    quizContent.setAttribute("id", "page-content");
 
     var quizQuestion = document.createElement("h3");
     quizQuestion.setAttribute("id", "quiz-questions");
@@ -91,6 +91,8 @@ function startQuiz() {
             checkAnswer(index, buttonID);
             index++;
         }
+
+        // When the quiz has reached the end
         if (index === questions.length) {
             stopTimer();
             showResults();
@@ -198,7 +200,8 @@ function showResults() {
     results.appendChild(hEl);
     results.appendChild(pEl);
     results.appendChild(form);
-    mainContent.replaceChild(results, pageContent);
+    var currentPageContent = document.getElementById("page-content");
+    mainContent.replaceChild(results, currentPageContent);
 
     // Enter input value & save score
 
@@ -219,7 +222,4 @@ startButton.addEventListener("click", function() {
     startTimer();
 });
 
-// Append last page ############
-if (stopTimer() === true) {
-    showResults();
-}
+
