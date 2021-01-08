@@ -203,18 +203,20 @@ function showResults() {
     var currentPageContent = document.getElementById("page-content");
     mainContent.replaceChild(results, currentPageContent);
 
-    // Enter input value & save score
+    // Function to nter input value & save score
 
-    if (input.value === "") {
-        alert("Please enter your initials.");
-        return null;
-    }
+    submit.addEventListener("click", function(event) {
 
-    saveScore(input.value, secondsLeft);
-    window.location = "highscores.html";
+        event.preventDefault();
+
+        saveScore(input.value, secondsLeft);
+
+        // Redirect to highscores page
+
+        window.location.assign("highscores.html");
+    })
 
 }
-
 
 // Adding event (function defined earlier) to the button
 startButton.addEventListener("click", function() {

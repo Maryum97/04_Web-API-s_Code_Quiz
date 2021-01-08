@@ -50,3 +50,25 @@ function renderScores() { // call this function after the local storage has stor
         liEl.textContent = highscoreArray.initials[i] + " - " + highscoreArray.score[i];
     }
 }
+
+// Save score in the highscores and into the local storage
+function saveScore(newInitials, newScore) {
+    storeScores();
+
+    highscoreArray.initials.push(newInitials);
+    highscoreArray.score.push(newScore);
+
+    var highscoreString = JSON.stringify(highscoreArray);
+    localStorage.setItem("highscoreArray", highscoreString);
+
+}
+
+// Remove scores from list
+function clearScores() {
+    localStorage.removeItem("highscores");
+    renderScores();
+}
+
+if (scoresList !== null) {
+    renderScores();
+}
