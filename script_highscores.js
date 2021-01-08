@@ -60,8 +60,3 @@ function clearScores() {
 if (scoreList !== null) {
     renderScores();
 }
-
-// Call the function to clear scores from the highscores list
-clearBtn.addEventListener("click", function() {
-    clearScores();
-})
