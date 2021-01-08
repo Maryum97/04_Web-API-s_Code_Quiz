@@ -30,11 +30,7 @@ var questions = [
 // Calling the elements from index.html
 var mainContent = document.getElementById("main-content");
 var pageContent = document.getElementById("page-content");
-var startButton = document.getElementById("start-button");
 var timer = document.getElementById("seconds-remaining");
-
-// Calling the element from highscores.html
-var scoreList = document.getElementById("highscore-list");
 
 // Defining other elememts
 var timeInterval;
@@ -211,50 +207,18 @@ function showResults() {
     submit.addEventListener("click", function(event) {
 
         event.preventDefault();
-
-        var initials = input.value;
-
-        if (initials === null) {
-
-            console.log("No value entered!");
-
-        }
-
-        else {
-            var highScores = {
-                initials: initials,
-                score: secondsLeft
-            }
-
-        console.log(highScores);
-
-
-        // Parse and get item here
-        var allScores = localStorage.getItem("allScores");
-        if (allScores === null) {
-                allScores = [];
-        }
-
-        else {
-            allScores = JSON.parse(allScores);
-        }
-
-        // Stringify and set item here
-        allScores.push(highScores);
-        var newScore = JSON.stringify(allScores);
-        localStorage.setItem("allScores", newScore);
-
-        }
+        
+        // Call function from script_highscores.js to set scores into local storage (saving scores)
+        setScore(input.value, secondsLeft);
 
         // Redirect to highscores page
-
         window.location.assign("highscores.html");
     })
 
 }
 
 // Adding event (function defined earlier) to the button
-startButton.addEventListener("click", function() {
+document.getElementById("start-button").addEventListener("click", function() {
     startQuiz();
     startTimer();
 });
