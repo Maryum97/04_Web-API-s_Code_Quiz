@@ -29,8 +29,21 @@ function storeScores() {
 }
 
 
+// Save score in the highscores and into the local storage
+function saveScore(newInitials, newScore) {
+    storeScores();
+
+    highscoreArray.initials.push(newInitials);
+    highscoreArray.score.push(newScore);
+
+    var highscoreString = JSON.stringify(highscoreArray);
+    localStorage.setItem("highscoreArray", highscoreString);
+
+}
+
+
 // Render score in highscore list
-function renderScores() { // call this function after the local storage has stored the current data
+function renderScores() {
 
     scoresList.innerHTML = "";
 
@@ -43,17 +56,6 @@ function renderScores() { // call this function after the local storage has stor
     }
 }
 
-// Save score in the highscores and into the local storage
-function saveScore(newInitials, newScore) {
-    storeScores();
-
-    highscoreArray.initials.push(newInitials);
-    highscoreArray.score.push(newScore);
-
-    var highscoreString = JSON.stringify(highscoreArray);
-    localStorage.setItem("highscoreArray", highscoreString);
-
-}
 
 // Remove scores from list
 function clearScores() {
