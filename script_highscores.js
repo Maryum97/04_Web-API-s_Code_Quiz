@@ -13,8 +13,6 @@ var highscoreArray = {
 // Store scores in local storage
 function storeScores() {
 
-    // Put this separately in another function
-
     var storeHighscore = localStorage.getItem("highscoreArray");
 
     if (storeHighscore !== null) {
@@ -28,12 +26,6 @@ function storeScores() {
         highscoreArray.score = [];
     }
 
-    // array is populated with values; initials --> append new name; score --> append new results
-    // now, new results should be included with the existing results
-    // JSON.stringify
-    // localstorage.setitem() --> adds new score into the string
-
-    // Put storeScores code separately so that the highscores always display to the new user
 }
 
 
@@ -44,7 +36,7 @@ function renderScores() { // call this function after the local storage has stor
 
     storeScores();
 
-    for (var i = 0; i < scoresList.highscoreArray.initials.length; i++) {
+    for (var i = 0; i < highscoreArray.initials.length; i++) {
         var liEl = document.createElement("li");
         liEl.setAttribute("class", "indiv-highscore");
         liEl.textContent = highscoreArray.initials[i] + " - " + highscoreArray.score[i];
