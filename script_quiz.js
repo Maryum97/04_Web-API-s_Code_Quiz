@@ -203,13 +203,44 @@ function showResults() {
     var currentPageContent = document.getElementById("page-content");
     mainContent.replaceChild(results, currentPageContent);
 
-    // Function to nter input value & save score
+    // Function to enter input value & save score in  local storage
 
     submit.addEventListener("click", function(event) {
 
         event.preventDefault();
 
-        saveScore(input.value, secondsLeft);
+        var initials = input.value;
+
+        if (initials === null) {
+
+            console.log("No value entered!");
+
+        }
+
+        else {
+            var highScores = {
+                initials: initials,
+                score: secondsLeft
+            }
+
+        console.log(highScores);
+
+
+        // Get item here
+        var allScores = localStorage.getItem("allScores");
+        if (allScores === null) {
+                allScores = [];
+        }
+
+        else {
+            allScores = JSON.parse(allScores);
+        }
+
+        // Set item
+        allScores.push(highScores);
+        localStorage.setItem("allScores", newScore);
+
+        }
 
         // Redirect to highscores page
 
