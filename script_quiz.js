@@ -27,11 +27,14 @@ var questions = [
     }
 ]
 
-// Calling the elements from the html
+// Calling the elements from index.html
 var mainContent = document.getElementById("main-content");
 var pageContent = document.getElementById("page-content");
 var startButton = document.getElementById("start-button");
 var timer = document.getElementById("seconds-remaining");
+
+// Calling the element from highscores.html
+var scoreList = document.getElementById("highscore-list");
 
 // Defining other elememts
 var timeInterval;
@@ -226,7 +229,7 @@ function showResults() {
         console.log(highScores);
 
 
-        // Get item here
+        // Parse and get item here
         var allScores = localStorage.getItem("allScores");
         if (allScores === null) {
                 allScores = [];
@@ -236,8 +239,9 @@ function showResults() {
             allScores = JSON.parse(allScores);
         }
 
-        // Set item
+        // Stringify and set item here
         allScores.push(highScores);
+        var newScore = JSON.stringify(allScores);
         localStorage.setItem("allScores", newScore);
 
         }
