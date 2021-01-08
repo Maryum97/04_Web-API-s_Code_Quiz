@@ -1,5 +1,6 @@
 // Calling the element from highscores.html
 var scoreList = document.getElementById("highscore-list");
+var clearBtn = document.getElementById("clear-button");
 
 var highscores = {
     initials : [],
@@ -50,7 +51,7 @@ function setScore(newInitials, newScore) {
     localStorage.setItem("highscores", highscoresString);
 }
 
-// Call function to clear scores from list
+// Call function to clear scores from storage
 function clearScores() {
     localStorage.removeItem("highscores");
     renderScores();
@@ -58,4 +59,12 @@ function clearScores() {
 
 if (scoreList !== null) {
     renderScores();
+}
+
+// Call function to clear scores from highscores list
+function removeScores() {
+    clearBtn.addEventListener("click", function() {
+        scoreList.removeChild(listEl);
+        listEl.removeChild(pEl);
+    })
 }
