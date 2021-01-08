@@ -66,7 +66,6 @@ function startQuiz() {
         var listEl = document.createElement("li");
         var buttonEl = document.createElement("button");
         buttonEl.setAttribute("class", "quiz-answer");
-        buttonEl.setAttribute("background-color", "#6610f2"); // #####
         buttonEl.setAttribute("data-id", i);
         buttonEl.textContent = questions[index].answers[i];
 

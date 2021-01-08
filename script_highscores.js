@@ -61,10 +61,7 @@ if (scoreList !== null) {
     renderScores();
 }
 
-// Call function to clear scores from highscores list
-function removeScores() {
-    clearBtn.addEventListener("click", function() {
-        scoreList.removeChild(listEl);
-        listEl.removeChild(pEl);
-    })
-}
+// Call the function to clear scores from the highscores list
+clearBtn.addEventListener("click", function() {
+    clearScores();
+})
