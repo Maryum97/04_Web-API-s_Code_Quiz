@@ -16,4 +16,9 @@ Answering quick questions under time pressure can be fun for some people, and st
 <b>SUMMARY:</b>
 In a nutshell, JavaScript is one of the many languages helpful in making a page interactive and changing the dynamics of a page, to help the user feel involved in the activity and have fun, such as the experiance that this quiz provides to the student. As per the requirements of the marking criteria, I have provided the link to the deployed quiz below:
 
-<a href="https://maryum97.github.io/04_Web-API-s_Code_Quiz/">My Code Quiz</a>
+<a href="Assets/My Code Quix.webm">My Code Quiz</a>
+
+<b>SOURCES:</b>
+1. <a href="https://stackoverflow.com/">https://stackoverflow.com/</a>
+2. <a href="https://www.w3schools.com/">https://www.w3schools.com/</a>
+3. <a href="https://www.sitepoint.com/simple-javascript-quiz/">https://www.sitepoint.com/simple-javascript-quiz/</a>
