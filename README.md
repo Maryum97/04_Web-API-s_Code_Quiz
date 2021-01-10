@@ -12,9 +12,13 @@ The quiz has been created and styled using the very basics of the programming la
 Answering quick questions under time pressure can be fun for some people, and stressful for others. This quiz is designed for students who are keen to compete with themselves within a reasonable time limit, and compare their own scores after each attempt (the score being the time limit itself, for the student to judge between their quickness and their accuracy of answers). A short demo is shown in the video below:
 
 <b>SUMMARY:</b>
-In a nutshell, JavaScript is one of the many languages helpful in making a page interactive and changing the dynamics of a page, to help the user feel involved in the activity and have fun, such as the experiance that this quiz provides to the student. As per the requirements of the marking criteria, I have provided the link to the deployed quiz below:
+In a nutshell, JavaScript is one of the many languages helpful in making a page interactive and changing the dynamics of a page, to help the user feel involved in the activity and have fun, such as the experience that this quiz provides to the student. As per the requirements of the marking criteria, I have provided the link to the deployed quiz below:
 
 <a href="https://maryum97.github.io/04_Web-API-s_Code_Quiz/">My Code Quiz</a>
+
+The html for this website has been validated using the link below:
+
+<a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fmaryum97.github.io%2F04_Web-API-s_Code_Quiz%2F">https://validator.w3.org/</a>
 
 <b>SOURCES:</b>
 1. <a href="https://stackoverflow.com/">https://stackoverflow.com/</a>
