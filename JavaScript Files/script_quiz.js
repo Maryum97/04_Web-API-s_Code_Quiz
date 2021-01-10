@@ -65,10 +65,17 @@ function startQuiz() {
     for (var i = 0; i < 4; i++) {
         var listEl = document.createElement("li");
         var buttonEl = document.createElement("button");
+
+         // Dynamically apply css styling to option buttons
+        buttonEl.style.color = "white";
+        buttonEl.style.backgroundColor = "#6610f2";
+
+        // Set attributes to the button
         buttonEl.setAttribute("class", "quiz-answer");
         buttonEl.setAttribute("data-id", i);
         buttonEl.textContent = questions[index].answers[i];
 
+        // Append to parent
         listEl.appendChild(buttonEl);
         quizAnswers.appendChild(listEl);
     }
@@ -79,7 +86,6 @@ function startQuiz() {
 
 
     // Add event to options (as buttons)
-
     var optionBtn = quizAnswers.querySelectorAll("button");
 
     quizAnswers.addEventListener("click", function(event) {
@@ -99,7 +105,6 @@ function startQuiz() {
 
 
     // Next question
-
     quizQuestion.textContent = questions[index].question;
     for (var j = 0; j < 4; j++) {
         optionBtn[j].textContent = questions[index].answers[j];
@@ -168,6 +173,7 @@ function showResults() {
 
     // Replace original page content with results in place of quiz questions
 
+    // Create, style and append new elements to final page in the parent id
     results = document.createElement("div");
     results.setAttribute("class", "results");
 
@@ -189,7 +195,6 @@ function showResults() {
     submit.setAttribute("id", "submit");
 
     // Append elements into "form"
-
     label.appendChild(input);
     form.appendChild(label);
     form.appendChild(submit);
@@ -197,7 +202,6 @@ function showResults() {
 
 
     // Appnend all new elements, including "form", into "results"
-
     results.appendChild(hEl);
     results.appendChild(pEl);
     results.appendChild(form);
@@ -205,7 +209,6 @@ function showResults() {
     mainContent.replaceChild(results, currentPageContent);
 
     // Function to enter input value & save score in  local storage
-
     submit.addEventListener("click", function(event) {
 
         event.preventDefault();

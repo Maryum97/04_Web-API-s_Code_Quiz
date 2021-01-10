@@ -62,5 +62,5 @@ if (scoreList !== null) {
 }
 
 // Please look at the "clearBtn.js" file to see the rest of the remaining code; it was created to prevent errors in the console
-// The "clear highscores" button does not exist in index.html, so because this file is linked to the index page, the error in the console shows up, stating that there is no clearbtn in the index page
+// The "clear high scores" button does not exist in index.html, so because this file is linked to the index page, the error in the console shows up, stating that there is no clearbtn in the index page
 // Therefoere, the code for the clearBtn has been moved to a separate file.
