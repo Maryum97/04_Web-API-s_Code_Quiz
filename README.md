@@ -14,13 +14,13 @@ Answering quick questions under time pressure can be fun for some people, and st
 <b>SUMMARY:</b>
 In a nutshell, JavaScript is one of the many languages helpful in making a page interactive and changing the dynamics of a page, to help the user feel involved in the activity and have fun, such as the experience that this quiz provides to the student. As per the requirements of the marking criteria, I have provided the link to the deployed quiz below:
 
-<a href="https://maryum97.github.io/04_Web-API-s_Code_Quiz/">My Code Quiz</a>
+<a href="https://maryum97.github.io/04_Web-API-s_Code_Quiz/" target="_blank">My Code Quiz</a>
 
 The html for this website has been validated using the link below:
 
-<a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fmaryum97.github.io%2F04_Web-API-s_Code_Quiz%2F">https://validator.w3.org/</a>
+<a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fmaryum97.github.io%2F04_Web-API-s_Code_Quiz%2F" target="_blank">https://validator.w3.org/</a>
 
 <b>SOURCES:</b>
-1. <a href="https://stackoverflow.com/">https://stackoverflow.com/</a>
-2. <a href="https://www.w3schools.com/">https://www.w3schools.com/</a>
-3. <a href="https://www.sitepoint.com/simple-javascript-quiz/">https://www.sitepoint.com/simple-javascript-quiz/</a>
+1. <a href="https://stackoverflow.com/" target="_blank">https://stackoverflow.com/</a>
+2. <a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a>
+3. <a href="https://www.sitepoint.com/simple-javascript-quiz/"target="_blank">https://www.sitepoint.com/simple-javascript-quiz/</a>
