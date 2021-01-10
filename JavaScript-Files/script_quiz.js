@@ -141,7 +141,7 @@ function checkAnswer(index, buttonID) {
 
     removeMessage = setTimeout(function() {
         mainContent.removeChild(message);
-    }, 1000)
+    }, 5000)
 }
 
 // Function to start the timer
