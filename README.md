@@ -15,13 +15,19 @@ Answering quick questions under time pressure can be fun for some people, and st
 ![alt text](Assets/Annotation%202021-01-10%20203115.png?raw=true)
 
 2. Once the "Start Quiz" button is clicked on, the quiz begins, and the student must click on one of the four options to proceed through the quiz.
+
 ![alt text](Assets/Annotation%202021-01-10%20203205.png?raw=true)
 
+
 3. At the end of the quiz, the student acan view the submit page, where they may enter their initials and submit their score.
+
 ![alt text](Assets/Annotation%202021-01-10%20203250.png?raw=true)
 
+
 4. As soon as they press the submit button, their score is saved and they are redirected to the high scores page. It is up to the student whether or not they wish to clear the scores, by clicking on the "Clear High Scores" button. When they click "Go Back", they are redirected back to the main quiz page.
+
 ![alt text](Assets/Annotation%202021-01-10%20203329.png?raw=true)
+
 
 
 <b>SUMMARY:</b>
