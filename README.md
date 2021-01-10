@@ -11,7 +11,8 @@ The quiz has been created and styled using the very basics of the programming la
 
 Answering quick questions under time pressure can be fun for some people, and stressful for others. This quiz is designed for students who are keen to compete with themselves within a reasonable time limit, and compare their own scores after each attempt (the score being the time limit itself, for the student to judge between their quickness and their accuracy of answers). The images below represent how the quiz operates under normal functioning of the website:
 
-[Add Images Here]
+![alt text](Assets/Annotation%202021-01-10%20203115.png?raw=true)
+
 
 <b>SUMMARY:</b>
 In a nutshell, JavaScript is one of the many languages helpful in making a page interactive and changing the dynamics of a page, to help the user feel involved in the activity, such as the experience that this quiz provides to the student. As per the requirements of the marking criteria, I have provided the link to the deployed quiz below, for you to enjoy the experience for yourself!:
