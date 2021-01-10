@@ -33,7 +33,7 @@ In a nutshell, JavaScript is one of the many languages helpful in making a page 
 
 <a href="https://maryum97.github.io/04_Web-API-s_Code_Quiz/" target="_blank">My Code Quiz</a>
 
-The html for this website has been validated using the link below; the website is absolutely error free:
+The html for this website has been validated using the link below:
 
 <a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fmaryum97.github.io%2F04_Web-API-s_Code_Quiz%2F" target="_blank">https://validator.w3.org/</a>
 
