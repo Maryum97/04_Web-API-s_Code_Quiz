@@ -11,7 +11,17 @@ The quiz has been created and styled using the very basics of the programming la
 
 Answering quick questions under time pressure can be fun for some people, and stressful for others. This quiz is designed for students who are keen to compete with themselves within a reasonable time limit, and compare their own scores after each attempt (the score being the time limit itself, for the student to judge between their quickness and their accuracy of answers). The images below represent how the quiz operates under normal functioning of the website:
 
+1. The website loads and looks like the image below at first; the page welcomes the student to the quiz, and explains the rules. The top right corner shows the timer, which starts the moment the "Start Quiz" button is clicked on. The top left corner shows the link to the high scores page, where the student can view scores of previous rounds, if they are not already removed from the list of high scores.
 ![alt text](Assets/Annotation%202021-01-10%20203115.png?raw=true)
+
+2. Once the "Start Quiz" button is clicked on, the quiz begins, and the student must click on one of the four options to proceed through the quiz.
+![alt text](Assets/Annotation%202021-01-10%20203205.png?raw=true)
+
+3. At the end of the quiz, the student acan view the submit page, where they may enter their initials and submit their score.
+![alt text](Assets/Annotation%202021-01-10%20203250.png?raw=true)
+
+4. As soon as they press the submit button, their score is saved and they are redirected to the high scores page. It is up to the student whether or not they wish to clear the scores, by clicking on the "Clear High Scores" button. When they click "Go Back", they are redirected back to the main quiz page.
+![alt text](Assets/Annotation%202021-01-10%20203329.png?raw=true)
 
 
 <b>SUMMARY:</b>
