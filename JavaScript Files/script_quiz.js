@@ -173,6 +173,7 @@ function showResults() {
 
     var hEl = document.createElement("h1");
     hEl.textContent = "Quiz Complete!";
+    hEl.style.textAlign = "center"; // dynamically applying css styling
 
     var pEl = document.createElement("p");
     pEl.textContent = "Your final score is " + secondsLeft + ".";
@@ -192,6 +193,8 @@ function showResults() {
     label.appendChild(input);
     form.appendChild(label);
     form.appendChild(submit);
+    form.style.textAlign = "center";
+
 
     // Appnend all new elements, including "form", into "results"
 
