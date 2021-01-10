@@ -9,6 +9,6 @@ The page throws some questions related to coding at the student, who must answer
 
 The quiz has been created and styled using the very basics of the programming languages learnt over the period of the bootcamp so far: HTML, CSS stylesheets, and Bootstrap. Students can easily play this quiz on any device, whether laptop or phone. This quiz application is made interactive and user-frienldy, all thanks to the use of JavaScript as the third programming language, because of which the student attempting the quiz is able to attentively answer all 5 questions, and then submit and store their high-score at the end of the quiz.
 
-Answering quick questions under time pressure can be fun for some people, and stressful for others. This quiz is designed for students who are keen to compete with themselves within a reasonable time limit, and compare their own scores after each attempt (the score being the time limit itself, for the student to judge between their quickness and their accuracy of answers). A short demo is shown in the animated gif below:
+Answering quick questions under time pressure can be fun for some people, and stressful for others. This quiz is designed for students who are keen to compete with themselves within a reasonable time limit, and compare their own scores after each attempt (the score being the time limit itself, for the student to judge between their quickness and their accuracy of answers). A short demo is shown in the animated video below:
 
 <b>SUMMARY:</b>
