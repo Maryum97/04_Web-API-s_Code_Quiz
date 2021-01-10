@@ -14,7 +14,7 @@ Answering quick questions under time pressure can be fun for some people, and st
 [Add Images Here]
 
 <b>SUMMARY:</b>
-In a nutshell, JavaScript is one of the many languages helpful in making a page interactive and changing the dynamics of a page, to help the user feel involved in the activity and have fun, such as the experience that this quiz provides to the student. As per the requirements of the marking criteria, I have provided the link to the deployed quiz below, for you to enjoy the experience for yourself!:
+In a nutshell, JavaScript is one of the many languages helpful in making a page interactive and changing the dynamics of a page, to help the user feel involved in the activity, such as the experience that this quiz provides to the student. As per the requirements of the marking criteria, I have provided the link to the deployed quiz below, for you to enjoy the experience for yourself!:
 
 <a href="https://maryum97.github.io/04_Web-API-s_Code_Quiz/" target="_blank">My Code Quiz</a>
 
